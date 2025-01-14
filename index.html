@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="firstSection">
+      <img src="images/1.png" alt="" />
+    </div>
+
+    <div class="secondSection">
+      <img src="images/2.png" alt="" />
+    </div>
+
+    <div class="contentSection">
+      <img class="contentSectionImg" src="images/3.png" alt="" />
+      <div class="contentBox">
+        <div class="contentBoxArticle">
+          <div class="firstSlideSection slideSection">
+            <div class="slider-container" id="slider1-container">
+              <div class="slider" id="slider1">
+                <img src="images/number1.png" alt="Image 1" />
+                <img src="images/number2.png" alt="Image 2" />
+                <img src="images/number3.png" alt="Image 3" />
+              </div>
+            </div>
+            <button class="prev" onclick="changeSlide('slider1', -1)">
+              &#10094;
+            </button>
+            <button class="next" onclick="changeSlide('slider1', 1)">
+              &#10095;
+            </button>
+          </div>
+          <div class="textAreaSection">
+            <div class="titleSection">
+              <div class="title">
+                <p>K-Beauty</p>
+                <span>Korean Beauty cosmetics</span>
+              </div>
+              <img class="numberImg" src="images/number1.png" alt="" />
+            </div>
+            <div class="explanation">
+              <span>
+                We provide a curated selection of Korean cosmetics, sourced
+                directly from trusted<br />manufacturers and brands. Leveraging
+                our well-established supply network, we<br />ensure access to
+                high-quality skincare and beauty products tailored for all skin
+                types.<br />
+                From innovative serums to rejuvenating creams, our offerings
+                represent the best of<br />Korea's cosmetics industry.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blank"></div>
+
+        <div class="contentBoxArticle">
+          <div class="textAreaSection paddingright">
+            <div class="titleSection">
+              <div class="title">
+                <p>K-Food</p>
+                <span>Korean Famous Food</span>
+              </div>
+              <img class="numberImg" src="images/number2.png" alt="" />
+            </div>
+            <div class="explanation">
+              <span>
+                Our extensive network of reliable suppliers allows us to deliver
+                a wide range of<br />authentic Korean food products. From
+                traditional staples like kimchi and gochujang<br />
+                to popular snacks and instant noodles, we bring the rich
+                culinary culture of<br />
+                Korea to Africa. For diverse needs, we also offer certified
+                halal options, ensuring<br />
+                inclusivity and authenticity in every bite.
+              </span>
+            </div>
+          </div>
+          <div class="secondSlideSection slideSection">
+            <div class="slider-container" id="slider2-container">
+              <div class="slider" id="slider2">
+                <img src="images/number1.png" alt="Image 1" />
+                <img src="images/number2.png" alt="Image 2" />
+                <img src="images/number3.png" alt="Image 3" />
+              </div>
+            </div>
+            <button class="prev" onclick="changeSlide('slider2', -1)">
+              &#10094;
+            </button>
+            <button class="next" onclick="changeSlide('slider2', 1)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <div class="blank"></div>
+
+        <div class="contentBoxArticle">
+          <div class="thirdSlideSection slideSection">
+            <div class="slider-container" id="slider3-container">
+              <div class="slider" id="slider3">
+                <img src="images/number1.png" alt="Image 1" />
+                <img src="images/number2.png" alt="Image 2" />
+                <img src="images/number3.png" alt="Image 3" />
+              </div>
+            </div>
+            <button class="prev" onclick="changeSlide('slider3', -1)">
+              &#10094;
+            </button>
+            <button class="next" onclick="changeSlide('slider3', 1)">
+              &#10095;
+            </button>
+          </div>
+          <div class="textAreaSection">
+            <div class="titleSection">
+              <div class="title">
+                <p>K-Used Car</p>
+                <span>Korean used car sales</span>
+              </div>
+              <img class="numberImg" src="images/number3.png" alt="" />
+            </div>
+            <div class="explanation">
+              <span>
+                Through our strong partnerships with trusted suppliers, we
+                provide access to a<br />diverse range of high-quality used cars
+                from Korea. Every vehicle undergoes rigorous<br />inspection to
+                ensure reliability and value. Whether for personal or commercial
+                use,<br />
+                our streamlined supply chain guarantees dependable
+                transportation solutions<br />tailored to your needs.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="emailSection">
+      <div class="mobile">
+        <div class="textSection QRTextSection">
+          <div class="bigText">CONTACT US</div>
+          <div class="smallText">
+            Contact us to connect with top-quality Korean products.<br />
+            We'll provide tailored solutions for your needs
+          </div>
+        </div>
+
+        <div class="QrSection">
+          <p class="FAQ">Mobile FAQ</p>
+          <div class="QR">
+            <img class="QRImage" src="images/1QR.png" alt="" />
+            <span>or</span>
+            <img class="QRImage" src="images/2QR.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="emailSubmit">
+        <div class="form-container">
+          <form>
+            <label for="first-name">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first_name"
+              
+            />
+
+            <label for="last-name">Last name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last_name"
+              
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              
+            />
+
+            <label for="message">What can we help you with?</label>
+            <textarea
+              id="message"
+              class="message"
+              name="message"
+              rows="4"
+              
+            ></textarea>
+            <div class="submit-btn">
+              <button type="submit" class="submit-button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerImg">
+        <img src="images/NAP.png" />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+
+</html>
