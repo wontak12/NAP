@@ -263,7 +263,7 @@ button:hover {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%; /* Three images */
+  width: 100%; /* Three images */
 }
 
 .slider img {
